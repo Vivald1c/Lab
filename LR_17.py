@@ -373,6 +373,13 @@ class Provider:
         """ Метод change_city изменяет город """
         self.__city = city
 
+    def display_info(self): #######################################################################################################################
+        print(f"Поставщик: {self.__name}")
+        print(f"Тип деятельности: {self.__kind}")
+        print(f"Страна: {self.__country}")
+        print(f"Город: {self.__city}")
+        print(f"Адрес: {self.__address}")
+    
     @staticmethod
     def __serialize(data):
         """ Метод серилизирует полученные данные """
